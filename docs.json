@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "willow",
   "name": "Wehrmanager",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#009DA0",
+    "light": "#52C6C8",
+    "dark": "#006A6D"
   },
   "favicon": {
     "light": "/images/favicon.ico",
@@ -180,6 +180,16 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "description": "Dokumentation vonwehrmanager.de",
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "color": {
+      "light": "#F5F7FA",
+      "dark": "#0B1026"
     }
   }
 }
