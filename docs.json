@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "mint",
   "name": "Wehrmanager",
   "colors": {
     "primary": "#009DA0",
