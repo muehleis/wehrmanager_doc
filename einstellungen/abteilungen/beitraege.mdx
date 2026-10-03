@@ -1,0 +1,51 @@
+---
+title: "Beiträge (Abteilung)"
+description: "Beitragssätze nach Alter, Berechnungsregeln, SEPA-Gläubigerdaten, Rechnungstexte und Rücklastschriftgebühren einer Abteilung einstellen."
+keywords: ["Beiträge", "Beitragssatz", "Jahresbeitrag", "Mitgliedsbeitrag", "Beitragsjahr", "anteilig", "Teilzeitraum", "Gläubiger-ID", "Gläubiger-Identifikationsnummer", "Zahlungsempfänger", "Vorlauf", "Verwendungszweck", "Rechnungstext", "Rücklastschriftgebühr", "Standard-Zahlungsart", "Altersgrenze"]
+---
+
+Hier legen Sie fest, wie die Mitgliedsbeiträge einer Abteilung berechnet und eingezogen werden.
+
+<Info>
+  Wo finden Sie das? Im Einstellungsmenü links unter **Abteilungen** die Abteilung aufklappen und **Beiträge** wählen. Das Modul **Beiträge** muss eingeschaltet sein.
+</Info>
+
+## Beitragssätze
+
+Beitragssätze sind Jahresbeiträge, die vom Alter abhängen können. Beispiel: bis 17 Jahre 0 €, ab 18 Jahren 24 €.
+
+1. Klicken Sie auf **Beitragssatz anlegen**.
+2. Tragen Sie **Alter von** und **Alter bis** ein. Lassen Sie **Alter bis** leer für „ohne Grenze“.
+3. Tragen Sie den **Jahresbeitrag (€)** ein.
+4. Tragen Sie ein, ab wann (**Gültig ab**) und bis wann (**Gültig bis**) der Satz gilt. So können Sie eine Beitragserhöhung im Voraus anlegen.
+5. Klicken Sie auf **Speichern**.
+
+Ein Satz für „alle Altersstufen“ gilt unabhängig vom Geburtsdatum.
+
+## Berechnung
+
+| Feld | Bedeutung |
+| --- | --- |
+| **Beginn des Beitragsjahres** | Der Monat, in dem das Beitragsjahr beginnt, meist Januar. |
+| **Berechnungszeitraum (Monate)** | Für wie viele Monate auf einmal berechnet wird, zum Beispiel 12. |
+| **Beitragsberechnung für neue Mitglieder** | **Ab dem Monat nach dem Beitritt**, **Ab dem nächsten Beitragsjahr** oder **Ab dem nächsten 1. Januar**. |
+| **Standard-Zahlungsart** | Die Zahlungsart für neue Mitglieder: Lastschrift, Rechnung/Überweisung oder Barzahlung. |
+| **Altersgrenze** | Welches Alter für den Beitragssatz zählt: das **Alter zu Beginn des Berechnungszeitraums** oder das **Alter, das im Berechnungszeitraum erreicht wird**. |
+| **Teilzeiträume berechnen** | Beginnt oder endet die Mitgliedschaft im Zeitraum, wird der Beitrag anteilig nach Monaten berechnet. |
+
+## SEPA-Lastschrift
+
+Diese Angaben brauchen Sie für den [Beitragseinzug](/finanzen/beitragseinzug):
+
+- **Zahlungsempfänger**: der Name, der auf dem Kontoauszug der Mitglieder steht.
+- **Gläubiger-Identifikationsnummer**: Sie erhalten sie bei der Deutschen Bundesbank.
+- **IBAN** und **BIC** (BIC freiwillig) des Kontos, auf das die Beiträge eingehen.
+- **Vorlauf Erstlastschrift (Tage)** und **Vorlauf Folgelastschrift (Tage)**: wie viele Tage vor dem Fälligkeitstag die Datei bei der Bank sein muss. Mit **Nur Werktage zählen** werden Wochenenden nicht mitgezählt.
+- **Verwendungszweck**: mit den Platzhaltern `%%JAHR%%` (Jahr des Zeitraums) und `%%MITGLIED_KOMPLETTNAME%%` (Vor- und Nachname).
+
+## Rechnungen und Rücklastschriften
+
+- **Rechnungstext 1** und **Rechnungstext 2**: Texte, die auf den [Rechnungen](/finanzen/rechnungen) stehen.
+- **Bankgebühr je Rücklastschrift (€)** und **Bearbeitungsgebühr je Rücklastschrift (€)**: werden beim Buchen einer Rücklastschrift vorgeschlagen.
+
+Klicken Sie zum Schluss auf **Speichern**.

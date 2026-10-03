@@ -1,0 +1,57 @@
+---
+title: "Beitragseinzug"
+description: "Mitgliedsbeiträge berechnen, als Forderung buchen und die SEPA-Lastschriftdatei für die Bank erzeugen."
+keywords: ["Beitragseinzug", "Lastschrift", "SEPA", "Lastschriftdatei", "XML", "Einzug", "Beiträge", "Mitgliedsbeitrag", "Fälligkeitstag", "Erstlastschrift", "Folgelastschrift", "Zahlungseingang", "Bank einreichen"]
+---
+
+Mit dem Beitragseinzug berechnen Sie die Mitgliedsbeiträge einer Abteilung, buchen sie als Forderung und erzeugen eine SEPA-Lastschriftdatei. Diese Datei laden Sie in Ihrem Onlinebanking hoch.
+
+<Info>
+  Wo finden Sie das? Im Menü links unter **Finanzen › Beitragseinzug**. Das Modul **Beiträge** muss in der Abteilung eingeschaltet sein.
+</Info>
+
+## Bevor Sie starten
+
+Prüfen Sie diese Punkte:
+
+- Unter [Beiträge (Abteilung)](/einstellungen/abteilungen/beitraege) sind **Beitragssätze** angelegt.
+- Dort sind auch **Zahlungsempfänger**, **Gläubiger-Identifikationsnummer** und **IBAN** der Abteilung eingetragen. Fehlt etwas, zeigt der Wehrmanager einen Hinweis.
+- Die Mitglieder haben eine [Bankverbindung und ein gültiges SEPA-Mandat](/personen/bank-und-sepa).
+
+## So geht es
+
+<Steps>
+  <Step title="Einstellungen wählen">
+    Wählen Sie die **Abteilung**, den **Zeitraum** (von – bis), den **Fälligkeitstag** und die **Buchungskategorie**. Prüfen Sie den **Verwendungszweck**. Sie können Platzhalter verwenden: `%%JAHR%%` für das Jahr und `%%MITGLIED_KOMPLETTNAME%%` für den Namen.
+  </Step>
+  <Step title="Ergebnis prüfen">
+    Der Wehrmanager zeigt drei Kästen:
+
+    - **Per Lastschrift**: Summe und Zahl der Mitglieder, getrennt nach Erst- und Folgelastschriften.
+    - **Per Rechnung oder bar**: Diese Mitglieder kommen nicht in die Lastschriftdatei.
+    - **Nicht berechnet**: Mitglieder, für die kein Beitrag berechnet werden konnte. Den Grund sehen Sie in der Liste.
+
+    Schauen Sie sich besonders die Liste **Nicht berechnet** und die gelben **Hinweise** an.
+  </Step>
+  <Step title="Lastschriftdatei erzeugen">
+    Klicken Sie auf **Lastschriftdatei erzeugen** und bestätigen Sie. Die Beiträge werden jetzt als Forderung auf den [Mitgliedskonten](/finanzen/mitgliedskonten) gebucht. Darüber steht, bis wann Sie die Datei bei der Bank einreichen müssen.
+  </Step>
+  <Step title="Datei bei der Bank einreichen">
+    Unter **Bisherige Einzüge** laden Sie die **XML-Datei** herunter und reichen sie in Ihrem Onlinebanking ein. Mit dem **Drucker-Symbol** drucken Sie eine Liste aller Lastschriften.
+  </Step>
+  <Step title="Zahlungseingang buchen">
+    Sobald das Geld auf dem Bankkonto ist, klicken Sie beim Einzug auf **Eingang buchen**. Wählen Sie das **Bankkonto** und den **Buchungstag**. Der Einzug steht dann auf **eingegangen**.
+  </Step>
+</Steps>
+
+<Tip>
+  Den Zahlungseingang können Sie auch über den [Kontoauszug-Import](/finanzen/kontoauszug) buchen. Der Wehrmanager erkennt den Lastschrifteinzug dort automatisch.
+</Tip>
+
+## Rücklastschriften
+
+Gibt die Bank einzelne Lastschriften zurück, buchen Sie diese im [Mitgliedskonto](/finanzen/mitgliedskonten) über **Rücklastschrift** oder direkt beim [Kontoauszug-Import](/finanzen/kontoauszug).
+
+## Einen Einzug löschen
+
+Solange Sie die Datei noch nicht bei der Bank eingereicht haben, können Sie einen Einzug mit dem **Papierkorb** löschen. Die zugehörigen Forderungen werden dann ebenfalls gelöscht.

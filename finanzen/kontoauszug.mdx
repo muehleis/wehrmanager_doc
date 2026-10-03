@@ -1,0 +1,42 @@
+---
+title: "Kontoauszug importieren"
+description: "Umsätze aus dem Onlinebanking als CAMT.053 oder CSV einlesen und mit Vorschlägen buchen."
+keywords: ["Kontoauszug", "Import", "CAMT", "CAMT.053", "CSV", "Onlinebanking", "Umsätze", "Bankimport", "Abgleich", "Vorschlag", "übergehen", "Rückgabegrund"]
+---
+
+Statt jede Bankbuchung von Hand abzutippen, können Sie den Kontoauszug aus Ihrem Onlinebanking einlesen. Der Wehrmanager macht für jeden Umsatz einen Vorschlag, wie er gebucht werden soll.
+
+<Info>
+  Wo finden Sie das? Im Menü links unter **Finanzen › Kontoauszug**.
+</Info>
+
+## Kontoauszug einlesen
+
+1. Laden Sie in Ihrem Onlinebanking die Umsätze als **CAMT.053 (XML)** oder **CSV** herunter.
+2. Wählen Sie im Wehrmanager das **Bankkonto**.
+3. Wählen Sie unter **Kontoauszug importieren** die Datei aus.
+
+Umsätze, die schon einmal eingelesen wurden, erkennt der Wehrmanager und übernimmt sie nicht doppelt.
+
+## Umsätze buchen
+
+Die Liste zeigt alle **offenen Umsätze** mit Datum, Zahler oder Empfänger, Verwendungszweck, Betrag und einem **Vorschlag**.
+
+Klicken Sie bei einem Umsatz auf **Buchen**. Wählen Sie dann unter **Buchen als**:
+
+| Auswahl | Wann? |
+| --- | --- |
+| **Lastschrifteinzug** | Der Umsatz ist die Gutschrift eines [Beitragseinzugs](/finanzen/beitragseinzug). Wird automatisch vorgeschlagen. |
+| **Rücklastschrift** | Die Bank hat eine Lastschrift zurückgegeben. Sie können die Bankgebühr dem Mitglied belasten, eine Bearbeitungsgebühr hinzufügen, die Mahnstufe erhöhen und das SEPA-Mandat sperren. |
+| **Zahlung auf ein Mitgliedskonto** | Ein Mitglied hat überwiesen. Wählen Sie das Mitgliedskonto. Der Betrag wird auf die offenen Forderungen verteilt, ein Überschuss als Spende gebucht. |
+| **Buchung im Kassenbuch** | Alle anderen Umsätze. Wählen Sie die **Einnahmeart** bzw. **Ausgabeart** und bei Bedarf **Geschäft / Veranstaltung**. |
+
+Umsätze, die Sie nicht buchen möchten, blenden Sie mit dem **Auge-Symbol** aus (**Übergehen**).
+
+## Bearbeitete Umsätze
+
+Mit **Bearbeitete anzeigen** sehen Sie auch gebuchte und übergangene Umsätze. Mit **Wieder öffnen** setzen Sie einen Umsatz zurück auf offen.
+
+<Warning>
+  Beim Wiederöffnen bleiben bereits erstellte Buchungen bestehen. Löschen Sie diese bei Bedarf in [Kasse und Bank](/finanzen/kasse-und-bank).
+</Warning>
