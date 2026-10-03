@@ -7,15 +7,25 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/favicon.ico",
+    "dark": "/images/favicon.ico"
+  },
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Erste Schritte",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "schnellstart",
+          "uebersicht-dashboard",
+          "stichwortverzeichnis-a-z"
         ]
+      },
+      {
+        "group": "Wehr",
+        "pages": []
       }
     ],
     "global": {
@@ -34,8 +44,9 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo-64.png",
+    "dark": "/images/logo-64.png",
+    "href": "https://www.wehrmanager.de"
   },
   "navbar": {
     "links": [
