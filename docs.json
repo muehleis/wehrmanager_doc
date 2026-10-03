@@ -191,5 +191,13 @@
       "light": "#F5F7FA",
       "dark": "#0B1026"
     }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Montserrat"
+    },
+    "body": {
+      "family": "Montserrat"
+    }
   }
 }
