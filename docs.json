@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Wehrmanager",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -19,13 +19,115 @@
           "index",
           "quickstart",
           "schnellstart",
+          "grundbegriffe",
           "uebersicht-dashboard",
           "stichwortverzeichnis-a-z"
+        ],
+        "icon": "flag"
+      },
+      {
+        "group": "Personen",
+        "icon": "users",
+        "pages": [
+          "personen/personen-suchen",
+          "personen/mitglied-anlegen",
+          "personen/personenakte",
+          "personen/abteilungen-und-module",
+          "personen/fuehrerschein",
+          "personen/bank-und-sepa"
+        ]
+      },
+      {
+        "group": "Aufgaben, Jubiläen und Nachweise",
+        "icon": "circle-check",
+        "pages": [
+          "aufgaben",
+          "jubilaeen",
+          "ausbildungsnachweise"
+        ]
+      },
+      {
+        "group": "Einsätze",
+        "icon": "bell",
+        "pages": [
+          "einsaetze"
+        ]
+      },
+      {
+        "group": "Übungsbetrieb",
+        "icon": "clipboard-list",
+        "pages": [
+          "uebungsbetrieb/uebungsplan",
+          "uebungsbetrieb/erfassung",
+          "uebungsbetrieb/uebersicht",
+          "uebungsbetrieb/themenkatalog"
+        ]
+      },
+      {
+        "group": "Finanzen",
+        "icon": "coins",
+        "pages": [
+          "finanzen/mitgliedskonten",
+          "finanzen/beitragseinzug",
+          "finanzen/rechnungen",
+          "finanzen/kasse-und-bank",
+          "finanzen/kontoauszug",
+          "finanzen/kassenbericht"
+        ]
+      },
+      {
+        "group": "Auswertungen",
+        "icon": "chart-column",
+        "pages": [
+          "auswertungen/personalliste",
+          "auswertungen/protokoll"
         ]
       },
       {
         "group": "Wehr",
-        "pages": []
+        "icon": "gear",
+        "pages": [
+          "einstellungen/wehr/grundeinstellungen",
+          "einstellungen/wehr/dateiarten",
+          "einstellungen/wehr/briefe",
+          "einstellungen/wehr/dienstgrade",
+          "einstellungen/wehr/fahrzeuge",
+          "einstellungen/wehr/uebungsarten",
+          "einstellungen/wehr/einsatzformular",
+          "einstellungen/wehr/abonnement"
+        ]
+      },
+      {
+        "group": "Abteilungen",
+        "icon": "sitemap",
+        "pages": [
+          "einstellungen/abteilungen/uebersicht",
+          "einstellungen/abteilungen/grundeinstellungen",
+          "einstellungen/abteilungen/funktionen",
+          "einstellungen/abteilungen/ausbildung-und-abzeichen",
+          "einstellungen/abteilungen/uebungen",
+          "einstellungen/abteilungen/beitraege"
+        ]
+      },
+      {
+        "group": "Weitere Einstellungen",
+        "icon": "sliders",
+        "pages": [
+          "einstellungen/dateien",
+          "einstellungen/finanzen/grundeinstellungen",
+          "einstellungen/finanzen/kataloge",
+          "einstellungen/jubilaeen",
+          "einstellungen/benutzerverwaltung",
+          "einstellungen/rollen-und-rechte"
+        ]
+      },
+      {
+        "group": "Mein Konto",
+        "icon": "user",
+        "pages": [
+          "mein-konto/profil",
+          "mein-konto/anmeldung-und-sicherheit"
+        ]
       }
     ],
     "global": {

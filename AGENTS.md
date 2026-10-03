@@ -14,14 +14,16 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Seiten sind auf Deutsch, in einfacher Sprache für nicht technisch versierte Nutzer, mit „Sie“-Anrede.
+- „Person“ = jemand, dessen Daten verwaltet werden; „Benutzer“ = jemand mit Zugang zum Wehrmanager.
+- Menü- und Schaltflächennamen exakt wie im Programm (Quelle: Repo muehleis/wehrmanager2026) und fett schreiben.
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
+- Jede Modulseite beginnt mit einem `<Info>`-Kasten „Wo finden Sie das? …“ mit dem Menüpfad.
+- Jede Seite hat `description` und `keywords` im Frontmatter, damit die Suche Begriffe findet.
+- Neue Begriffe auch im Stichwortverzeichnis (`stichwortverzeichnis-a-z.mdx`) ergänzen.
+- Use active voice and second person ("Sie")
 - Keep sentences concise — one idea per sentence
 - Use sentence case for headings
 - Bold for UI elements: Click **Settings**
