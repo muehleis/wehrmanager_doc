@@ -59,7 +59,6 @@
         "pages": [
           "uebungsbetrieb/uebungsplan",
           "uebungsbetrieb/erfassung",
-          "uebungsbetrieb/uebersicht",
           "uebungsbetrieb/themenkatalog"
         ]
       },
@@ -80,6 +79,7 @@
         "icon": "chart-column",
         "pages": [
           "auswertungen/personalliste",
+          "auswertungen/pflichtstunden",
           "auswertungen/protokoll"
         ]
       },
@@ -145,6 +145,12 @@
       ]
     }
   },
+  "redirects": [
+    {
+      "source": "/uebungsbetrieb/uebersicht",
+      "destination": "/auswertungen/pflichtstunden"
+    }
+  ],
   "logo": {
     "light": "/images/logo-64.png",
     "dark": "/images/logo-64.png",

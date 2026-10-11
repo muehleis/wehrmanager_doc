@@ -1,10 +1,13 @@
 ---
 title: "Aufgaben"
-description: "Fällige Führerscheinkontrollen, Ausbildungsnachweise und Neuwahlen in einer Liste, mit Vorschau auf die nächsten Jahre."
-keywords: ["Aufgaben", "Todo", "Zu erledigen", "fällig", "Führerscheinkontrolle", "Ausbildungsnachweis", "Neuwahl", "Wahl", "Erinnerung", "Vorschau"]
+description: "Manuelle Aufgaben anlegen und Benutzern zuweisen sowie fällige Führerscheinkontrollen, Ausbildungsnachweise und Neuwahlen in einer Liste, mit Vorschau auf die nächsten Jahre."
+keywords: ["Aufgaben", "Todo", "Zu erledigen", "fällig", "Manuelle Aufgabe", "Aufgabe anlegen", "Aufgabe zuweisen", "Zuständig", "Erledigen", "Wieder öffnen", "E-Mail-Benachrichtigung", "Führerscheinkontrolle", "Ausbildungsnachweis", "Neuwahl", "Wahl", "Erinnerung", "Vorschau", "Aufgaben verwalten"]
 ---
 
-Die Aufgabenliste sammelt alles, was bei Ihren Mitgliedern fällig ist. Sie müssen die Aufgaben nicht selbst anlegen. Der Wehrmanager erzeugt sie automatisch aus den Daten der Personen.
+Die Aufgabenliste sammelt alles, was in Ihrer Wehr zu erledigen ist. Es gibt zwei Arten von Aufgaben:
+
+- **Automatische Aufgaben**: Der Wehrmanager erzeugt sie selbst aus den Daten der Personen, zum Beispiel eine fällige Führerscheinkontrolle.
+- **Manuelle Aufgaben**: Sie legen sie selbst an und weisen sie einem Benutzer zu, zum Beispiel „Getränke für die Jahreshauptversammlung bestellen“.
 
 <Info>
   Wo finden Sie das? Im Menü links unter **Aufgaben**. Eine Kurzfassung sehen Sie auf dem [Dashboard](/uebersicht-dashboard) im Kasten **Zu erledigen**.
@@ -17,17 +20,56 @@ Die Aufgabenliste sammelt alles, was bei Ihren Mitgliedern fällig ist. Sie müs
 | **Führerscheinkontrolle** | Die letzte Kontrolle liegt länger zurück, als in den [Grundeinstellungen der Wehr](/einstellungen/wehr/grundeinstellungen) festgelegt. | Wenn Sie beim [Führerschein](/personen/fuehrerschein) eine neue Kontrolle erfassen. |
 | **Ausbildungsnachweis** | Ein regelmäßiger Nachweis, zum Beispiel eine Gesundheitsuntersuchung, ist fällig oder fehlt. | Wenn Sie den Nachweis bei der [Person](/personen/abteilungen-und-module) erfassen. |
 | **Neuwahl** | Die Amtszeit eines Wahlamtes endet. | Wenn Sie die Funktion bei der Person beenden oder neu eintragen. |
+| **Manuelle Aufgabe** | Ein Benutzer hat die Aufgabe angelegt und zugewiesen. | Wenn der zuständige Benutzer sie **erledigt**. |
+
+## Manuelle Aufgaben
+
+### Wer darf was?
+
+- Mit dem Recht **Aufgaben verwalten** legen Sie Aufgaben an, bearbeiten und weisen sie zu. Sie sehen alle manuellen Aufgaben Ihrer Wehr. Das Recht stellen Sie unter [Rollen und Rechte](/einstellungen/rollen-und-rechte) ein.
+- Ohne dieses Recht sehen Sie nur Aufgaben, die Ihnen zugewiesen sind oder die Sie selbst angelegt haben. Ihnen zugewiesene Aufgaben können Sie **erledigen** und **wieder öffnen**, aber nicht ändern.
+
+### Eine Aufgabe anlegen
+
+1. Klicken Sie auf **Aufgabe anlegen**.
+2. Geben Sie einen **Titel** ein und beschreiben Sie die Aufgabe bei Bedarf unter **Beschreibung**.
+3. Wählen Sie unter **Zuständig** den Benutzer, der die Aufgabe erledigen soll. Gesperrte Benutzer stehen nicht zur Auswahl.
+4. Tragen Sie bei Bedarf ein Datum unter **Fällig am (optional)** ein. Ohne Datum steht in der Liste **Keine Frist**.
+5. Lassen Sie **Bei neuer Zuweisung per E-Mail benachrichtigen** eingeschaltet, wenn der Benutzer eine E-Mail bekommen soll.
+6. Klicken Sie auf **Speichern**.
+
+Die E-Mail enthält Titel, Beschreibung, Fälligkeit und einen Link direkt zur Aufgabe.
+
+<Note>
+  Für die E-Mail braucht der Benutzer eine hinterlegte E-Mail-Adresse. Fehlt sie, schalten Sie die Benachrichtigung aus, um die Aufgabe trotzdem zuzuweisen.
+</Note>
+
+### Eine Aufgabe bearbeiten oder neu zuweisen
+
+Klicken Sie in der Liste auf den Titel der Aufgabe. Ändern Sie die Angaben und klicken Sie auf **Speichern**. Wählen Sie unter **Zuständig** einen anderen Benutzer, bekommt dieser auf Wunsch ebenfalls eine E-Mail. Unten im Fenster steht, wer die Aufgabe wann angelegt hat.
+
+Eine erledigte Aufgabe können Sie erst wieder neu zuweisen, wenn Sie sie wieder geöffnet haben.
+
+### Eine Aufgabe erledigen
+
+Klicken Sie in der Liste rechts auf **Erledigen**. Alternativ öffnen Sie die Aufgabe und klicken dort auf **Erledigen**. Die Aufgabe verschwindet aus der Liste.
+
+Erledigte Aufgaben stehen darunter im Bereich **Erledigte manuelle Aufgaben**, mit dem Datum und dem Namen, wer sie erledigt hat. Mit **Wieder öffnen** holen Sie eine Aufgabe zurück in die offene Liste.
+
+<Tip>
+  Der Bereich **Erledigte manuelle Aufgaben** erscheint nur im laufenden Jahr, bei **Alle Abteilungen** und wenn als Art **Alle Aufgaben** oder **Manuelle Aufgabe** gewählt ist.
+</Tip>
 
 ## Die Liste filtern
 
-- **Jahr**: Das laufende Jahr zeigt alles, was **fällig** ist, auch Überfälliges. Die folgenden Jahre sind eine **Vorschau**. Sie zeigen, was nach heutigem Stand im gewählten Jahr fällig wird.
-- **Art**: Nur eine Art von Aufgaben, zum Beispiel nur Neuwahlen.
-- **Abteilung**: Nur Aufgaben einer Abteilung.
+- **Jahr**: Das laufende Jahr zeigt alles, was **offen / fällig** ist, auch Überfälliges. Offene manuelle Aufgaben stehen hier immer, egal wann sie fällig sind. Die folgenden Jahre sind eine **Vorschau**. Sie zeigen, was nach heutigem Stand im gewählten Jahr fällig wird.
+- **Art**: Nur eine Art von Aufgaben, zum Beispiel nur Neuwahlen oder nur manuelle Aufgaben.
+- **Abteilung**: Nur Aufgaben einer Abteilung. Manuelle Aufgaben gehören zu keiner Abteilung und erscheinen deshalb nur bei **Alle Abteilungen**.
 
 ## Die Spalten
 
-- **Fällig**: das Fälligkeitsdatum. Rot bedeutet überfällig, **sofort** bedeutet, dass etwas fehlt.
-- **Person**: Klicken Sie auf den Namen, um die Person zu öffnen und die Aufgabe dort zu erledigen.
-- **Aufgabe** und **Details**: was genau zu tun ist.
+- **Fällig**: das Fälligkeitsdatum. Rot bedeutet überfällig. **Sofort** bedeutet, dass etwas fehlt. **Keine Frist** steht bei manuellen Aufgaben ohne Datum.
+- **Person / Zuständig**: Bei automatischen Aufgaben die Person. Klicken Sie auf den Namen, um die Person zu öffnen und die Aufgabe dort zu erledigen. Bei manuellen Aufgaben der zuständige Benutzer.
+- **Aufgabe** und **Details**: was genau zu tun ist. Bei manuellen Aufgaben steht unter **Details**, wer die Aufgabe angelegt hat.
 
-Mit **Drucken** drucken Sie die Liste mit den gewählten Filtern aus, zum Beispiel für eine Dienstbesprechung.
+Mit **Drucken** drucken Sie die Liste mit den gewählten Filtern aus, zum Beispiel für eine Dienstbesprechung. Bei manuellen Aufgaben wird auch die Beschreibung mitgedruckt.
